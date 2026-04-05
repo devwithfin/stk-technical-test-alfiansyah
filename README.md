@@ -4,9 +4,10 @@
 This project explores how complex hierarchical data can be organized using a flexible tree structure. Users can create, nest, and reorder items dynamically, while maintaining clear parent–child relationships. The system provides dual views: a data grid for efficient editing and a tree view for better visualization of hierarchy. The goal is to demonstrate that even deeply nested structures remain manageable when CRUD operations, ordering, and relational consistency are handled cohesively end to end.
 
 ## Tech Stack
-- Frontend: React 19, Vite, TypeScript, Tailwind CSS, shadcn/ui, custom toast & state hooks
-- Backend: NestJS 11, Prisma ORM, PostgreSQL, class-validator, Swagger docs
-- Tooling: Docker Compose for orchestration, ESLint + Prettier for linting, Jest for backend tests
+- Frontend: React + TypeScript, Tailwind CSS + Shadcn/ui
+- Backend: NestJS
+- Database: PostgreSQL + Prisma
+- Tools: Docker
 
 ## Quick Start
 Choose the setup path that fits your workflow.
@@ -42,12 +43,12 @@ Choose the setup path that fits your workflow.
    ```
    Confirm the tables via your DB client.
 7. **Start the apps**
-   - Backend (NestJS + Swagger):
+   - Backend:
      ```bash
      cd backend
      npm run start:dev
      ```
-   - Frontend (Vite dev server):
+   - Frontend:
      ```bash
      cd app
      npm run dev
